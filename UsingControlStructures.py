@@ -15,18 +15,15 @@ retirementAge = 60
 personsAge = input('Enter an age:')
 
 if personsAge < pSchoolAge and personsAge < votingAge:
-        print 'Too young'
-    else:
-       if personsAge >= votingAge:
-            print 'Remember to vote'
-        else:
-           if personsAge > presidentialAge:
-                print 'Vote for me!'
-            elif personsAge < presidentialAge:
-                print 'You cannot be president'
-            else:
-               if personsAge >= retirementAge:
-                    print 'Too old'
+    print 'Too young'
+if personsAge >= votingAge:
+    print 'Remember to vote'
+if personsAge > presidentialAge:
+    print 'Vote for me!'
+if personsAge < presidentialAge:
+    print 'You cannot be president'
+if personsAge >= retirementAge:
+    print 'Too old'
 
                 
 
@@ -49,10 +46,10 @@ print "-----------"
 
 i=0
 r=0
-while i != 1:
-        r+=1
-	t = r*79
-	
-	if t%97 == 1 :
-		i = t%97
-		print r, 'is the smallest positive integer'
+while i !=1:
+    r+=1
+    t = r*79
+    if t%97 == 1:
+        i = t%97
+        print r, 'is the smallest positive integer'
+
